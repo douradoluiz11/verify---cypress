@@ -1,0 +1,14 @@
+{
+    "testFiles": "**/*.feature",
+    "scrollBehavior": false,
+    "viewportWidth": 1980,
+    "viewportHeight": 1600,
+    "chromeWebSecurity": false,
+    "experimentalNetworkStubbing": true,
+    "video": false,
+    "baseUrl": "https://verity.com.br",
+    "projectId": "a395t5"
+
+}
+
+

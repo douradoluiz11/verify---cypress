@@ -1,0 +1,13 @@
+[
+    {
+        "scenario": "LOGIN_VALIDO",
+        "data": {
+            "user": "Luiz Henrique Dourado Ferreira",
+            "email": "henrike.dourado@gmail.com",
+            "telefone": "11962598196",
+            "desafio": "Automação Cypress JavaScript"
+            
+
+        }
+    }
+]

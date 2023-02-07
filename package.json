@@ -1,0 +1,27 @@
+{
+  "name": "cypress-panvel",
+  "version": "1.0.0",
+  "description": "Projeto de Testes de Automação do Site Verity",
+  "main": "index.js",
+  "scripts": {
+    "cy:run" : "cypress run --config video=false --env allure=true --browser chrome --record --key d8adda2b-5615-4578-b761-baf3ff136c82",
+    "allure:generate" : "allure generate allure-results",
+    "allure:open" : "allure open allure-report",
+    "allure:clear" : "rm -r allure-results/ allure-report || true",
+    "test": "npx npm-run-all allure:clear cy:run allure:generate allure:open"
+  },
+  "author": "Luiz Henrique Dourado",
+  "license": "MIT",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.26.5",
+    "cypress": "^6.9.1",
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "cypress-xpath": "^1.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/steps"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.0"
+  }
+}
